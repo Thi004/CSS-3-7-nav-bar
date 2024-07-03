@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background: #ff9ff3;
+}
+
+nav #main-menu li a {
+    color: #ffff;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
+}
+
+#main-menu {
+    display: flex;
+}
+
+nav #main-menu li:hover a {
+    background: #f368e0;
+    transition: 0.3s;
+}
+#toggle {
+    display: none;
+    background: #f368e0;
+    color: #ffff;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #main-menu {
+        flex-direction: column;
+        text-align: left;
+    }
+    #toggle {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+}
+
